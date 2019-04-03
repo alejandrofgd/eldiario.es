@@ -1,0 +1,71 @@
+/***
+Estilos generales para el ejercicio 1 
+de la prueba de eldiario.es
+***/
+
+html, body {
+    background: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+#tablet-title, #desktop-title {
+    display: none;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 10px 0;
+}
+.row {
+    text-align: center;
+}
+.card {
+    background: #ffffff;
+    margin-bottom: 15px;
+    width: 50%;
+    padding-top: 50%;
+    position: relative;
+    display: inline-block;
+    
+}
+.card.last-tablet, .card.last-desktop {
+    margin-right: 0!important;
+}
+@media (min-width:  768px) {
+    .card.col-tablet-1 {
+        width: 100%;
+        padding-top: 50%;
+        margin-right: 15px;
+    }
+    .card.col-tablet-2 {
+        width: calc(50% - 15px);
+        padding-top: 50%;
+        margin-right: 15px;
+    }
+    #mobile-title {
+        display: none;
+    }
+    #tablet-title {
+        display: block;
+    }
+}
+@media (min-width:  992px) {
+    .card.col-tablet-1 {
+        width: calc(50% - 15px);
+        padding-top: 25%;
+    }
+    .card.col-tablet-2 {
+        width: calc(25% - 15px);
+        padding-top: 25%;
+    }
+    .card.last-tablet {
+        margin-right: 15px!important;
+    } 
+    #tablet-title {
+        display: none;
+    }
+    #desktop-title {
+        display: block;
+    }
+}
+

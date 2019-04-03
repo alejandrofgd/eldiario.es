@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
+}
+svg {
+  cursor: pointer;
+}
+
+.subunit.ESC { fill: #ddc; }
+.subunit.ESI { fill: #cdd; }
+.subunit.ESX { fill: transparent; }
+.subunit.SEC { fill: #dcd; }
+.subunit.SEM { display: none; }
+
+.subunit {
+  stroke: #000;
+  stroke-linejoin: round;
+}
+
+.subunit-boundary {
+  fill: none;
+  stroke: #777;
+  stroke-linejoin: round;
+}
+
+.province {
+  stroke: #000;
+  stroke-dasharray: 2,2;
+  stroke-linejoin: round;
+}
+
+.d3-tip {
+  line-height: 1;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
